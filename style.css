@@ -56,3 +56,45 @@ a{
     max-width: 1640px;
     margin: 0 auto;
 }
+
+#header{
+    width: 100%;
+    margin-top: 1.0625rem;
+}
+
+#header h1{
+    font-size: 1.25rem;
+    color: var(--primaryColor);
+}
+
+.headerInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuDesktop{
+    display: none;
+}
+
+#login{
+    display: none;
+}
+
+#heroText{
+    font-size: calc(3rem - 2px);
+}
+
+@media (min-width: 768px){
+    #menuMobile{
+        display: none;
+    }
+    
+    #menuDesktop{
+        display: flex;
+    }
+
+    #login{
+        display: flex;
+    }
+}
