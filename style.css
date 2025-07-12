@@ -1,4 +1,5 @@
 :root{
+    font-size: 16px;
     --backgroundColor: #fff;
     --primaryColor: #3778FA;
     --lightColor: #F3F3F3;
@@ -11,19 +12,19 @@
 @font-face{
     font-family: 'Space Grotesk';
     src: url(fonts/SpaceGrotesk-SemiBold.ttf);
-    font-size: 600;
+    font-weight: 600;
 }
 
 @font-face{
     font-family: 'Space Grotesk';
     src: url(fonts/SpaceGrotesk-Medium.ttf);
-    font-size: 500;
+    font-weight: 500;
 }
 
 @font-face{
     font-family: 'Space Grotesk';
     src: url(fonts/SpaceGrotesk-Regular.ttf);
-    font-size: 400;
+    font-weight: 400;
 }
 
 *{
@@ -63,7 +64,7 @@ a{
 }
 
 #header h1{
-    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 4vw, 2.25rem);
     color: var(--primaryColor);
 }
 
@@ -82,19 +83,243 @@ a{
 }
 
 #heroText{
-    font-size: calc(3rem - 2px);
+    text-align: center;
+}
+
+#heroText h2{
+    font-size: 2.875rem;
+    letter-spacing: -0.115rem;
+    margin-top: 4.625rem;
+}
+
+#heroText p{
+    font-size: 0.875rem;
+    margin-top: 1.3125rem;
+}
+
+#heroImg{
+    margin-top: 2.5rem;
+}
+
+h3{
+    font-size: 1.875rem;
+    text-align: center;
+    letter-spacing: -0.115rem;
+}
+#video h3{
+    margin-top: 6.875rem;
+}
+
+#video img{
+    margin-top: 2.1875rem;
+}
+
+#choose h3{
+    margin-top: 6.84375rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-bottom: 1.8125rem;
+}
+
+#chooseContent{
+    background: var(--lightColor);/*dps mudar pra lightcolor*/
+    border-radius: 20px;
+
+}
+
+#chooseImg{
+    padding-top: 3.125rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chooseImg img{
+    width: clamp(202.14px, 50vw, 465px);
+}
+
+#areaSpan{
+    display: flex;
+    flex-direction: column;
+    gap: 0.603125rem;
+}
+
+.span {
+    background: var(--backgroundColor);
+    border-radius: 8px;
+    margin: 0 1.375rem 1.5rem;
+    padding: 0.6875rem 1.0625rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+  
+.spanHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.question {
+    flex: 1;
+    font-weight: 500;
+}
+  
+.toggle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    line-height: 1;
+}
+
+.span p{
+    color: #22272F;
+    font-weight: 400;
+}
+
+#spanText{
+    color: var(--textMuted);
+    font-size: calc(1rem - 6px);
+    letter-spacing: 0.053rem;
+    margin-top: calc(1rem - 10px);
+    display: inline-block;
+}
+
+#footer{
+    margin-top: 6.25rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    background: var(--primaryColor);
+    color: var(--textLight);
+}
+
+#footerFirst h2{
+    font-size: 2.875rem;
+    letter-spacing: -0.115rem;
+    text-align: center;
+    padding-top: 4.25rem;
+    margin-right: 9.25rem;
+}
+
+#footerFirst p{
+    margin-top: 1.3125rem;
+    font-size: calc(1rem - 2px);
+    margin-right: 7.3125rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+}
+
+#learnMore{
+    font-weight: 500 !important;
+}
+
+#learnMore a{
+    color: var(--textDark);
+    background: var(--backgroundColor);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 0.8125rem 1.375rem;
+    margin-top: 1.6875rem;
+    margin-bottom: 5rem;
+}
+
+#footerSecond{
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(5rem - 1px);
+}
+
+#footerText{
+    width: 12.1875rem;
+}
+
+#footerText h4{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#footerText p{
+    margin-top: calc(1rem + 1px);
+    font-weight: 400;
+    
+}
+
+#footerMenu{
+    width: 6.3125rem;
+}
+
+#footerMenu li{
+    margin-bottom: 1.25rem;
+}
+
+#footerThird{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.625rem;
+}
+
+#footerThird li{
+    margin-bottom: 1.25rem;
+}
+
+#title{
+    font-weight: 500;
+}
+
+#content{
+    font-weight: 400;
+}
+
+#socials{
+    font-weight: 400;
+}
+
+#terms{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.75rem;
+    text-align: center;
+    gap: 1.25rem;
+    font-weight: 400;
+}
+
+#terms a{
+    color: #a0da7a;
+}
+
+#terms p:last-child{
+    margin-bottom: 2rem;
 }
 
 @media (min-width: 768px){
     #menuMobile{
         display: none;
     }
-    
+
     #menuDesktop{
         display: flex;
+        justify-content: space-between;
+        gap: 2.6875rem;
+        font-size: calc(1rem + 2px);
     }
 
     #login{
         display: flex;
+    }
+
+    #login ul{
+        display: flex;
+        gap: 2.4375rem;
+        font-weight: 600;
+    }
+
+    #startFree{
+        color: var(--backgroundColor);
+        background: var(--primaryColor);
+        border-radius: 100px;
+        padding: 1.1875rem 2.1875rem;
     }
 }
